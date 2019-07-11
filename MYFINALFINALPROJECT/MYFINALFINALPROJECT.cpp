@@ -97,7 +97,7 @@ int main()
 
 	sf::Sprite playerSprite;
 	playerSprite.setTexture(playerTex);
-	playerSprite.setScale(0.5, 0.5);
+	playerSprite.setScale(0.4, 0.4);
 	playerSprite.setPosition(100, HEIGHT / 2);
 
 
@@ -109,7 +109,7 @@ int main()
 			if (event.type == sf::Event::Closed)
 				window.close();
 			if (event.type == sf::Event::KeyPressed) {
-				if (event.key.code == sf::Keyboard::W) {
+				if (event.key.code == sf::Keyboard::Space) {
 					jump();
 				}
 			}
